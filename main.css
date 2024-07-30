@@ -600,7 +600,7 @@ p {
     margin-bottom: 20px;
     width: 250px;
     height: 100px;
-    background-image: url('../media/icons/wave_small.png');
+    background-image: url('media/icons/wave_small.png');
     text-align: center;
     align-content: center;
     position: relative;
