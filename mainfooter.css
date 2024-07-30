@@ -1,0 +1,301 @@
+/*********-default-**********/
+* {
+    font-family: 'Crimson';
+    color: rgb(0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+body {
+    background-color: #ffeeee;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url(../font/Crimson_Text/CrimsonText-Regular.ttf);
+}
+
+/**************************/
+.mainView {
+    max-width: 1200px;
+    min-height: 1500px;
+    margin: auto;
+
+    /*border:1px solid gray;*/
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+/*-----------------------*/
+
+.title-wrap {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headertxt {
+    font-size: 50px;
+    display: block;
+
+}
+
+
+.logo {
+    display: block;
+    height: 40px;
+}
+
+.headerSpace {
+    width: 95%;
+    height: 600px;
+    position: relative;
+    place-content: inherit;
+    margin: auto;
+    top: 0;
+    left: 0;
+}
+
+.introText {
+
+    margin: auto;
+    max-width: 80%;
+}
+
+.introText h1 {
+    display: inline-block;
+    font-family: 'Crimson';
+
+}
+
+.model img {
+    width: 200px;
+    height: 100px;
+}
+
+.introText img {
+    width: 23px;
+}
+
+.introText h3 img {
+    display: inline-block;
+
+}
+
+
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(0%, -50%);
+    user-select: none;
+    /* -- Prevent image highlighting -- */
+}
+
+#image-track>.image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+/*-----------------------*/
+.navigationView {
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burgerMenu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 1000;
+    top: 70px;
+    right: 0;
+    width: 100px;
+    height: max-content;
+    background-color: aqua;
+    opacity: 0;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.sidebar .navBarName {
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 0.5rem;
+
+}
+
+@media screen and (max-width: 700px) {
+    .burgerMenu {
+        display: block;
+    }
+
+    .navView {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+    .burgerMenu {
+        display: none;
+    }
+
+}
+
+
+
+.navView {
+    width: 800px;
+    height: 40px;
+    /*background-color: white;*/
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.navBarName {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navBarName li {
+    margin: 5px 10px 5px 10px;
+}
+
+.navBarName li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.5s;
+}
+
+.navBarName li a:hover {
+
+    color: #565656;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/**/
+.menuActive {
+    color: palevioletred !important;
+}
+
+
+
+
+
+
+
+
+.contentView {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 5rem;
+    background-color: rgb(248, 255, 227);
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*-----------FOOTER------------*/
+.footerView {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+
+.sns {
+    display: flex;
+    margin: auto;
+    top: 0;
+    left: 0;
+}
+
+.sns img {
+    width: 52px;
+    display: grid;
+    padding: 2px;
+    background: linear-gradient(270deg, #ffea71, #f88181);
+    border-radius: 50%;
+}
+
+.sns img:hover {
+    background: linear-gradient(270deg, #4fa1ff, #6dfab3);
+    border-radius: 50%;
+    width: 60px;
+
+}
+
+
+
+#footertxt {
+    margin: auto;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Teachers';
+    color: rgb(0, 0, 0);
+    padding: 40px;
+}
