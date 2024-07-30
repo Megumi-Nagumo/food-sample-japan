@@ -3,4 +3,5 @@ This is a website that I created for the first time in the html/css course at ci
 It's about food sample indutry in Japan: its hisroty and how they are created today. 
 Hope you enjoy it. 
 
+Link: https://megumi-nagumo.github.io/food-sample-japan/
 ![image](https://github.com/user-attachments/assets/12f548aa-2448-47f0-852c-ad82d59107db)
